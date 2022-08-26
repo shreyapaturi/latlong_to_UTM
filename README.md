@@ -1,5 +1,9 @@
 # latlong_to_UTM
 
+If you work with large scale data from different parts of the world, you might very well be working with data projected using the UTM (Universal Transverse Mercator) map projection. As you may remember from working with data projected in UTM, there are 60 different UTM zones, each centred on different lines of longitude. If you need to define your projection, or reproject your data into UTM, you therefore need to know the zone number.
+
+This program will automate which zone a particular x,y coordinate pair falls within. This is useful to convert large lat/long data to UTM in cases where software can give issues as this code will handle different types of errors usually found in CSV files.
+
 Method1:
 
 The easiest and convenient method of the three was using the equation. However, it was impossible
